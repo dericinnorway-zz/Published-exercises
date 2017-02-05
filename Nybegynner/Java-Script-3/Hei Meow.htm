@@ -1,0 +1,517 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0045)http://jsbin.com/nawufedana/1/edit -->
+<!DOCTYPE html PUBLIC "" ""><HTML id="jsbin-com" lang="en"><HEAD><META 
+content="IE=11.0000" http-equiv="X-UA-Compatible">
+   
+<META charset="utf-8">   <TITLE>JS Bin - Collaborative JavaScript 
+Debugging</TITLE>   <LINK href="http://jsbin.com/oembed?url=http://jsbin.com/nawufedana/1/edit?js,console" 
+rel="alternate" type="application/json+oembed">   <LINK href="http://static.jsbin.com/images/favicon.png" 
+rel="icon">   <LINK href="Hei%20Meow_filer/codemirror.css" rel="stylesheet">   
+<LINK href="Hei%20Meow_filer/style.css" rel="stylesheet">   <LINK href="Hei%20Meow_filer/themes.css" 
+rel="stylesheet">   <LINK href="http://jsbin.com/manifest.json" rel="manifest">  
+ 
+<META name="viewport" content="width=device-width, initial-scale=1">   <LINK 
+href="Hei%20Meow_filer/mobile.css" rel="stylesheet">     <LINK href="Hei%20Meow_filer/font.css" 
+rel="stylesheet">   
+<META http-equiv="X-UA-Compatible" content="IE=edge">       <!--[if lte IE 9 ]><link rel="stylesheet" href="http://static.jsbin.com/css/ie.css?3.40.2"><![endif]--> 
+    
+<SCRIPT>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+    ga('create', 'UA-1656750-13', 'auto');
+    ga('require', 'linkid', 'linkid.js');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+    
+    </SCRIPT>
+   
+<META name="description" id="app-description" content="A live pastebin for HTML, CSS &amp; JavaScript and a range of processors, including SCSS, CoffeeScript, Jade and more..."> 
+  
+<META content="http://jsbin.com" property="og:url">   
+<META content="JS Bin" property="og:title">   
+<META content="A live pastebin for HTML, CSS &amp; JavaScript and a range of processors, including SCSS, CoffeeScript, Jade and more..." 
+property="og:description">   
+<META content="http://static.jsbin.com/images/logo.png" property="og:image"> 
+<META name="GENERATOR" content="MSHTML 11.00.9600.18538"></HEAD> <!--[if lt IE 7]>  <body class="source ie ie6"> <![endif]--> <!--[if IE 7]>     <body class="source ie ie7"> <![endif]--> <!--[if gt IE 7]>  <body class="source ie">     <![endif]--> <!--[if !IE]><!--> 
+
+<BODY class="source public "><!--<![endif]--> 
+<SCRIPT>
+if(top != self) {
+  window.location = location.pathname.split('/').slice(0, -1).concat(['embed']).join('/') + (location.search ? location.search : '');
+  document.write('<' + '!--');
+}
+</SCRIPT>
+ <A class="visuallyhidden" id="skipToEditor" href="http://jsbin.com/nawufedana/1/edit?js,console#html">Skip 
+welcome &amp; menu and move to editor</A>   
+<DIV class="toppanel-wrapper" id="toppanel" style="display: none;">
+<DIV class="toppanel-column toppanel-column-first"><A title="Close" class="toppanel-hide" 
+href="http://jsbin.com/nawufedana/1/edit?js,console#">Close welcome panel</A><A 
+class="toppanel-logo" href="http://jsbin.com/nawufedana/1/edit?js,console#"><IMG 
+alt="Welcome to JS Bin" src="Hei%20Meow_filer/dave.min.svg">       </A>       
+<DIV class="toppanel-actions toppanel-actions-alone">
+<DIV><A class="toppanel-button createnew" id="createnew" href="http://jsbin.com/">New 
+bin</A></DIV>
+<DIV></DIV></DIV></DIV>
+<DIV class="toppanel-column">
+<DIV><LABEL id="enableUniversalEditorLabel" for="enableUniversalEditor"><INPUT 
+id="enableUniversalEditor" type="checkbox">Textarea editor mode</LABEL></DIV>
+<H2 class="toppanel-title"><A class="toppanel-link" href="http://jsbin.com/help/features">JS 
+Bin features</A></H2>
+<UL class="toppanel-list">
+  <LI><A class="toppanel-link" 
+  href="http://jsbin.com/help/getting-started">Getting started</A></LI>
+  <LI><A class="toppanel-link" 
+  href="http://jsbin.com/help/keyboard-shortcuts">Keyboard Shortcuts</A></LI>
+  <LI><A class="toppanel-link" 
+  href="http://jsbin.com/help/export-gist">Exporting/importing 
+gist</A></LI></UL></DIV>
+<DIV class="toppanel-column">
+<H2 class="toppanel-title"><A class="toppanel-link" href="http://jsbin.com/upgrade">Pro 
+features</A></H2>
+<UL class="toppanel-list">
+  <LI><A class="toppanel-link" href="http://jsbin.com/help/private-bins">Private 
+  bins</A></LI>
+  <LI><A class="toppanel-link" href="http://jsbin.com/help/dropbox">Dropbox 
+  backup</A></LI>
+  <LI><A class="toppanel-link" href="http://jsbin.com/help/vanity-urls">Vanity 
+  URLs</A></LI></UL>
+<DIV class="toppanel-section toppanel-love toppanel-no-pro">
+<CENTER><A href="http://jsbin.com/upgrade">Upgrade to pro 
+now</A></CENTER></DIV></DIV>
+<DIV class="toppanel-column">
+<DIV class="toppanel-blog toppanel-section">
+<H2 class="toppanel-title"><A class="toppanel-link" 
+href="http://jsbin.com/blog">Blog</A></H2>
+<UL class="toppanel-list">
+  <LI><A class="toppanel-link" href="http://jsbin.com/blog/twdtw-10-jshint-highlighting-pro">JSHint, 
+  line highlighting and more</A></LI></UL></DIV>
+<DIV class="toppanel-help toppanel-section">
+<H2 class="toppanel-title"><A class="toppanel-link" 
+href="http://jsbin.com/help">Help</A></H2>
+<UL class="toppanel-list">
+  <LI><A class="toppanel-link" href="http://jsbin.com/help/versions">Versions: 
+  processors &amp; more</A></LI>
+  <LI><A class="toppanel-link" href="http://jsbin.com/help/delete-a-bin">Delete 
+  a bin</A></LI></UL></DIV></DIV>
+<DIV class="toppanel-column">
+<DIV class="toppanel-section">
+<H2 class="toppanel-title"><A class="toppanel-link" href="https://gratipay.com/jsbin" 
+target="_blank">Donate to JS Bin ❤</A></H2>
+<UL class="toppanel-list">
+  <LI><A href="https://gratipay.com/jsbin">Support JS Bin to keep the project 
+  open source &amp; MIT for all</A></LI>
+  <LI><A href="https://twitter.com/js_bin">Follow @js_bin on twitter</A></LI>
+  <LI><A href="http://jsbin.com/legals">By using JS Bin you agree to our legal 
+  terms</A></LI></UL></DIV>
+<DIV class="toppanel-section toppanel-love haspro">
+<P><A href="http://jsbin.com/dave/last/edit" target="_blank">Dave</A> loves you 
+<SPAN class="love">♥</SPAN> because you're a Pro.</P></DIV></DIV>
+<DIV class="toppanel-column">
+<DIV class="toppanel-section">
+<DIV class="toppanel-quote">“Everyone should learn how to program a computer 
+because it teaches you how to think” — <SPAN class="toppanel-quote-author">Steve 
+Jobs</SPAN></DIV></DIV></DIV></DIV>
+<SCRIPT>
+  // 
+  try {
+    if (localStorage.settings === undefined || localStorage.settings.indexOf('"toppanel":false') === -1) {
+      document.body.className += ' toppanel';
+    }
+  } catch (e) {
+    // if there is no localStorage
+  }
+  </SCRIPT>
+ <main><A class="toggle-side-nav mobile-nav-trigger" href="http://jsbin.com/nawufedana/1/edit?js,console#mobile-nav"><IMG 
+alt="Welcome to JS Bin" src="Hei%20Meow_filer/dave.min.svg"></A><NAV id="mobile-nav">
+<UL>
+  <LI aria-hidden="true"><A class="toggle-side-nav" href="http://jsbin.com/nawufedana/1/edit?js,console#">Dismiss</A></LI>
+  <LI><A class="createnew" href="http://jsbin.com/">New</A></LI>
+  <LI><A class="homebtn" href="http://jsbin.com/open">Open…</A></LI>
+  <LI class="loggedin"><A href="http://jsbin.com/account">Account</A></LI>
+  <LI class="loggedin"><A href="http://jsbin.com/logout">Logout</A></LI>
+  <LI class="loggedout"><A href="http://jsbin.com/login">Login / 
+  Register</A></LI>
+  <LI class="gopro-plain"><A href="http://jsbin.com/upgrade">Upgrade</A></LI>
+  <LI><A href="http://jsbin.com/help">Help</A></LI>
+  <LI><A href="http://jsbin.com/blog">Blog</A></LI>
+  <LI><A href="http://jsbin.com/about">About</A></LI></UL><A id="version" 
+aria-hidden="true" href="https://github.com/jsbin/jsbin">v3.40.2</A>   </NAV>
+<DIV id="control">
+<DIV class="control">
+<DIV id="menuinfo">
+<P></P></DIV>
+<DIV class="buttons">
+<DIV class="menu"><A class="brand button button-dropdown group button-dropdown-arrow" 
+href="http://jsbin.com/nawufedana/1/edit#file" target="_blank"><IMG src="Hei%20Meow_filer/favicon.svg"> 
+File</A>           
+<DIV class="dropdown" id="file">
+<DIV class="dropdownmenu"><A title="Create fresh bin" class="button group" id="createnew" 
+href="http://jsbin.com/" data-label="new" 
+data-desc="Create a brand new bin">New</A><A title="Set this bin to private" 
+class="button group" href="http://jsbin.com/upgrade" data-pro="true" data-desc="Set this bin to private">Make 
+bin private</A><A title="Delete this bin" class="deletebin button group" href="http://jsbin.com/delete" 
+data-desc="Delete bin" data-shortcut="ctrl+shift+del">Delete</A><A title="Archive this bin" 
+class="archivebin button group" href="http://jsbin.com/nawufedana/1/archive" 
+data-desc="Archive bin">Archive</A><A title="Restore this bin from the archive" 
+class="unarchivebin button group" href="http://jsbin.com/nawufedana/1/unarchive" 
+data-desc="Unrchive bin">Unarchive</A>
+<HR data-desc="">
+<A title="Add meta data to bin" class="button group" id="addmeta" href="http://jsbin.com/nawufedana/1/edit?js,console#add-description" 
+data-desc="Insert a description shown in My Bins">Add description</A><A title="Save snapshot" 
+class="button save group" href="http://jsbin.com/save" data-label="save" 
+data-desc="Save current work, and begin new revision on next change" 
+data-shortcut="ctrl+s">Save snapshot</A><A title="Create a new copy" class="button clone group" 
+id="clone" href="http://jsbin.com/clone" data-label="clone" data-desc="Copy and create a new bin start at revision #1">Clone</A>
+<HR data-desc="">
+<A title="Publish the current bin to http://jsbin.com" class="button group" 
+href="http://jsbin.com/upgrade" data-pro="true" data-desc="Publish the current bin to http://jsbin.com">Publish 
+to vanity homepage</A><A title="Create a new anonymous GitHub Gist from this bin" 
+class="export-as-gist button group" href="http://jsbin.com/nawufedana/1/edit?js,console#export-to-gist" 
+data-desc="Export individual panels to Github's gist as an anonymous user">Export 
+as gist</A><A title="Save to local drive" class="button download group" id="download" 
+href="http://jsbin.com/download" data-label="download" data-desc="Download a complete html file for this bin">Download</A><A 
+title="Set as starting code" class="startingpoint button group" href="http://jsbin.com/save" 
+data-label="save-as-template" data-desc="Use content from this bin when creating new bins">Save 
+as template</A><A title="How to embed a bin" class="button group" href="http://jsbin.com/help/how-can-i-embed-jsbin" 
+target="_blank" hidden="" data-label="how-to-embed" data-desc="How to embed a bin">How 
+to embed</A>             </DIV></DIV></DIV>
+<DIV class="menu"><SPAN class="button group">Add library           <SELECT 
+class="library" id="library"></SELECT></SPAN>         </DIV>
+<DIV class="menu " id="sharemenu"><A class="button button-dropdown group" href="http://jsbin.com/nawufedana/1/edit?js,console#share">Share</A> 
+          
+<DIV class="dropdown share-split" id="share">
+<DIV class="dropdowncontent">
+<FORM>
+<DIV class="controls"><STRONG>State</STRONG>                   
+<DIV id="sharebintype" data-desc="Streaming state of the bin when it's shared">
+<UL>
+  <LI><LABEL><INPUT name="state" type="radio" checked="" value="realtime"> 
+  Latest<SPAN id="andlive"></SPAN></LABEL></LI>
+  <LI><LABEL><INPUT name="state" class="lockrevision" type="radio" value="snapshot"> 
+  Snapshot </LABEL></LI></UL></DIV>
+<DIV id="sharepanels"><STRONG>View</STRONG>                     <LABEL><INPUT 
+name="view" type="radio" checked="" value="editor"> Editor<SPAN class="codecasting"><BR><SMALL>with 
+codecasting</SMALL></SPAN></LABEL>
+<UL>
+  <LI><LABEL><INPUT name="panel" type="checkbox" value="html">HTML</LABEL></LI>
+  <LI><LABEL><INPUT name="panel" type="checkbox" value="css">CSS</LABEL></LI>
+  <LI><LABEL><INPUT name="panel" type="checkbox" value="js">JS</LABEL></LI>
+  <LI><LABEL><INPUT name="panel" type="checkbox" 
+  value="console">Console</LABEL></LI>
+  <LI><LABEL><INPUT name="panel" type="checkbox" 
+  value="output">Output</LABEL></LI></UL></DIV><LABEL for="output-view"><INPUT 
+name="view" id="output-view" type="radio" value="output"> Output only<SPAN 
+class="codecasting"><BR><SMALL>with live reload</SMALL></SPAN></LABEL></DIV>
+<DIV class="result">
+<DIV data-desc="This bin's full output without the JS Bin editor"><STRONG><A 
+class="link" href="http://jsbin.com/nawufedana/1" target="_blank" 
+data-path="/">Link</A></STRONG><BR><INPUT name="url" class="link" type="text" value="http://jsbin.com/nawufedana/1/edit"> 
+                  </DIV>
+<DIV data-desc="Direct links to specific sources of the bin"><SPAN class="direct-links"></SPAN> 
+                  </DIV>
+<DIV data-desc="Embed this bin with the live output on your site"><SPAN class="heading">Embed</SPAN><BR><TEXTAREA name="embed" class="link" id="embedfield" data-path="/embed">&lt;a class="jsbin-embed" href="http://jsbin.com/nawufedana/1/embed?live"&gt;JS Bin demo&lt;/a&gt;&lt;script src="http://static.jsbin.com/js/embed.js"&gt;&lt;/script&gt;</TEXTAREA> 
+                  </DIV>
+<DIV data-desc="The preview of JS Bin when you share your bin"><SPAN class="heading">What 
+they'll see</SPAN><BR>
+<DIV id="share-preview">
+<DIV class="output"></DIV><SPAN class="header"></SPAN>                       
+<DIV class="editor">
+<DIV class="html"></DIV>
+<DIV class="css"></DIV>
+<DIV class="js"></DIV>
+<DIV class="console"></DIV>
+<DIV 
+class="output"></DIV></DIV></DIV></DIV></DIV></FORM></DIV></DIV></DIV></DIV>
+<DIV class="menu" id="start-saving"><A class="save button group" href="http://jsbin.com/nawufedana/1/save">Start 
+saving your work</A>         </DIV>
+<DIV id="panels"></DIV>
+<DIV class="help">
+<DIV class="loggedout menu"><A class="button button-dropdown focusbtn" id="loginbtn" 
+href="http://jsbin.com/login">Login or Register</A>             
+<DIV class="dropdown login" id="registerLogin">
+<DIV class="dropdowncontent"><A class="btn-github" href="http://jsbin.com/auth/github"><IMG 
+src="Hei%20Meow_filer/github-32.png">                  Login or Register via 
+GitHub                 </A><SPAN class="login-group">                  Or        
+           <A class="btn-login" href="http://jsbin.com/login">use your email 
+address</A>                 </SPAN></DIV></DIV></DIV>
+<DIV class="loggedin menu"></DIV>
+<DIV class="menu blog"><A class="button" href="http://jsbin.com/blog">Blog</A>   
+      </DIV>
+<DIV class="menu"><A class="button button-dropdown" href="http://jsbin.com/nawufedana/1/edit?js,console#help">Help</A> 
+          
+<DIV class="dropdown dd-right" id="help">
+<DIV class="dropdownmenu"><A id="showhelp" href="http://jsbin.com/nawufedana/1/edit?js,console#keyboardHelp" 
+data-desc="Discover poweruser keyboard shortcuts" 
+data-shortcut="ctrl+shift+?">Keyboard shortcuts</A><A id="showurls" href="http://jsbin.com/nawufedana/1/edit?js,console#urls" 
+data-desc="Shortcut &amp; direct access JS Bin URLs">JS Bin URLs</A>
+<HR data-desc="">
+<INPUT class="button" id="helpsearch" placeholder="Search help..." value=""><SPAN 
+id="result-count"></SPAN><SPAN id="results"></SPAN><A id="menu-all-help" href="http://jsbin.com/help" 
+target="_blank" data-desc="Learn about JS Bin features &amp; tricks">All help 
+topics</A>
+<HR data-desc="">
+<A id="menu-feedback" href="http://github.com/jsbin/jsbin/issues/new" target="_blank" 
+data-desc="Help make JS Bin better">Send feedback &amp; file bugs</A><A id="menu-fork" 
+href="https://gratipay.com/jsbin/" target="_blank" data-desc="Help make JS Bin better">Donate 
+on Gratipay</A><A id="menu-follow-jsbin" href="http://twitter.com/js_bin" 
+target="_blank" data-desc="Find out the latest news &amp; info">Follow 
+@js_bin</A><A id="menu-pro" href="http://jsbin.com/upgrade" data-pro="true" 
+data-desc="Upgrade">Support JS Bin: upgrade 
+now</A></DIV></DIV></DIV></DIV></DIV></DIV>
+<DIV tabindex="-1" id="load-cached"><A href="http://jsbin.com/nawufedana/1/edit?js,console#">Load 
+cached copy from <SPAN></SPAN></A> </DIV>
+<SCRIPT id="profile-template" type="template/text">
+  <a title="@{name}" href="#profile" class="button button-dropdown avatar" id="accountBtn"><picture>
+    <source srcset="{avatar} 1x, {avatar}?&s=58 2x">
+    <img src="{avatar}">
+  </picture> Account</a>
+  <div class="dropdown dd-right" id="profile">
+    <div class="dropdowncontent">
+      <div class="large-gravatar"><object data="http://static.jsbin.com/images/default-avatar.min.svg?{name}&3.40.2" type="image/svg+xml">
+    <img src="http://static.jsbin.com/images/default-avatar.min.svg?3.40.2"></object><picture class="large-gravatar">
+    <source srcset="{large_avatar} 1x, {large_avatar}?&s=240 2x">
+    <img class="large-gravatar" src="{large_avatar}">
+  </picture></div>
+      <span class="input" id="username" readonly>
+        @{name}<sup class="pro">pro</sup>
+      </span>
+
+      <ul>
+        <li><a href="http://jsbin.com/account/profile">Profile</a></li>
+        <li><a href="http://jsbin.com/account/editor">Editor settings</a></li>
+        <li><a href="http://jsbin.com/account/preferences">Preferences</a></li>
+        <li><a href="http://jsbin.com/logout">Logout</a></li>
+      </ul>
+
+    </div>
+    <a href="http://jsbin.com/upgrade" class="gopro">Support JS Bin: upgrade to PRO</a>
+  </div>
+</SCRIPT>
+ 
+<DIV class="stretch" id="bin" style="opacity: 0;">
+<DIV class="inline-menu menu">
+<UL>
+  <LI class="add-library"><SPAN>Add library</SPAN><SELECT class="library" id="alt-library"></SELECT></LI>
+  <LI class="run-with-js"><A tabindex="0" role="button">Run with JS</A></LI>
+  <LI><A tabindex="0" class="save" role="button">Save</A></LI>
+  <LI><A tabindex="0" class="show-share" role="button">Share</A></LI>
+  <LI><A tabindex="0" class="more" role="button" aria-label="More bin links and information">…</A></LI></UL></DIV>
+<DIV class="binview stretch" id="source"></DIV>
+<DIV id="panelswaiting">
+<DIV class="code stretch html panel">
+<DIV tabindex="0" class="label menu" role="menubar"><SPAN 
+class="name"><STRONG><A class="fake-dropdown button-dropdown" role="menuitem" 
+href="http://jsbin.com/nawufedana/1/edit?js,console#htmlprocessors">Processor</A></STRONG></SPAN>
+<DIV class="dropdown" id="htmlprocessors">
+<DIV class="dropdownmenu processorSelector" role="menu" aria-hidden="true" 
+data-type="html"><A role="menuitemradio" aria-checked="true" href="http://jsbin.com/nawufedana/1/edit?js,console#html" 
+data-label="HTML">HTML</A><A role="menuitemradio" href="http://jsbin.com/nawufedana/1/edit?js,console#markdown">Markdown</A><A 
+role="menuitemradio" 
+href="http://jsbin.com/nawufedana/1/edit?js,console#jade">Jade</A><A href="http://jsbin.com/nawufedana/1/edit?js,console#convert">Convert 
+to HTML</A></DIV></DIV></DIV>
+<DIV class="editbox"><TEXTAREA id="html" spellcheck="false" aria-label="HTML Code Panel" autocorrect="off" autocapitalize="none"></TEXTAREA> 
+      </DIV></DIV>
+<DIV class="code stretch javascript panel">
+<DIV tabindex="0" class="label menu" role="menubar"><SPAN 
+class="name"><STRONG><A class="fake-dropdown button-dropdown" role="menuitem" 
+href="http://jsbin.com/nawufedana/1/edit?js,console#javascriptprocessors">Processor</A></STRONG></SPAN>
+<DIV class="dropdown" id="javascriptprocessors">
+<DIV class="dropdownmenu processorSelector" role="menu" aria-hidden="true" 
+data-type="javascript"><A role="menuitemradio" aria-checked="true" href="http://jsbin.com/nawufedana/1/edit?js,console#javascript" 
+data-label="JavaScript">JavaScript</A><A role="menuitemradio" href="http://jsbin.com/nawufedana/1/edit?js,console#babel">ES6 
+/ Babel</A><A role="menuitemradio" href="http://jsbin.com/nawufedana/1/edit?js,console#jsx">JSX 
+(React)</A><A role="menuitemradio" href="http://jsbin.com/nawufedana/1/edit?js,console#coffeescript">CoffeeScript</A><A 
+role="menuitemradio" href="http://jsbin.com/nawufedana/1/edit?js,console#traceur">Traceur</A><A 
+role="menuitemradio" href="http://jsbin.com/nawufedana/1/edit?js,console#typescript">TypeScript</A><A 
+role="menuitemradio" href="http://jsbin.com/nawufedana/1/edit?js,console#processing">Processing</A><A 
+role="menuitemradio" href="http://jsbin.com/nawufedana/1/edit?js,console#livescript">LiveScript</A><A 
+role="menuitemradio" href="http://jsbin.com/nawufedana/1/edit?js,console#clojurescript">ClojureScript</A><A 
+role="menuitem" 
+href="http://jsbin.com/nawufedana/1/edit?js,console#convert">Convert to 
+JavaScript</A></DIV></DIV></DIV>
+<DIV class="editbox"><TEXTAREA id="javascript" spellcheck="false" aria-label="JavaScript Code Panel" autocorrect="off" autocapitalize="none"></TEXTAREA> 
+      </DIV></DIV>
+<DIV class="code stretch css panel">
+<DIV tabindex="0" class="label menu" role="menubar"><SPAN 
+class="name"><STRONG><A class="fake-dropdown button-dropdown" role="menuitem" 
+href="http://jsbin.com/nawufedana/1/edit?js,console#cssprocessors">Processor</A></STRONG></SPAN>
+<DIV class="dropdown" id="cssprocessors">
+<DIV class="dropdownmenu processorSelector" role="menu" aria-hidden="true" 
+data-type="css"><A role="menuitemradio" aria-checked="true" href="http://jsbin.com/nawufedana/1/edit?js,console#css" 
+data-label="CSS">CSS</A><A role="menuitemradio" href="http://jsbin.com/nawufedana/1/edit?js,console#less">Less</A><A 
+role="menuitemradio" 
+href="http://jsbin.com/nawufedana/1/edit?js,console#myth">Myth</A><A role="menuitemradio" 
+href="http://jsbin.com/nawufedana/1/edit?js,console#sass" data-label="Sass">Sass 
+<SPAN class="small">with Compass</SPAN></A><A role="menuitemradio" href="http://jsbin.com/nawufedana/1/edit?js,console#scss" 
+data-label="SCSS">SCSS <SPAN class="small">with Compass</SPAN></A><A role="menuitemradio" 
+href="http://jsbin.com/nawufedana/1/edit?js,console#stylus">Stylus</A><A role="menuitem" 
+href="http://jsbin.com/nawufedana/1/edit?js,console#convert">Convert to 
+CSS</A></DIV></DIV></DIV>
+<DIV class="editbox"><TEXTAREA id="css" spellcheck="false" aria-label="CSS Code Panel" autocorrect="off" autocapitalize="none"></TEXTAREA> 
+      </DIV></DIV>
+<DIV class="stretch console panel">
+<DIV class="label"><SPAN class="name"><STRONG>Console</STRONG></SPAN>         
+<SPAN class="options"><BUTTON title="ctrl + enter" id="runconsole">Run</BUTTON>  
+         <BUTTON title="ctrl + l" id="clearconsole">Clear</BUTTON>         
+</SPAN></DIV>
+<DIV class="stretch" id="console">
+<UL id="output"></UL>
+<FORM><TEXTAREA id="exec" spellcheck="false" aria-label="Console Panel" rows="1" autocorrect="off" autocapitalize="none"></TEXTAREA> 
+      </FORM></DIV></DIV>
+<DIV class="stretch live panel" id="live">
+<DIV class="label"><SPAN class="name"><STRONG>Output</STRONG></SPAN>         
+<SPAN class="options"><BUTTON title="ctrl + enter&#10;Include alerts, prompts &amp; confirm boxes" 
+id="runwithalerts">Run with JS</BUTTON>           <LABEL>Auto-run JS<INPUT id="enablejs" 
+type="checkbox"></LABEL>           <A title="Live preview" id="jsbinurl" href="http://jsbin.com/nawufedana/1" 
+target="_blank"><IMG src="Hei%20Meow_filer/popout.png"></A>         </SPAN><SPAN 
+class="size"></SPAN>       </DIV></DIV></DIV>
+<FORM id="saveform" action="/nawufedana/1/save" method="post"><INPUT name="method" type="hidden"> 
+    <INPUT name="_csrf" type="hidden" value="PfTzy6UYwgOZtAAPu9hOBzYK">   
+</FORM></DIV>
+<DIV class=" notification" id="tip">
+<P>        You can jump to the latest bin by adding <CODE>/latest</CODE> to your 
+URL   </P><A class="dismiss" href="http://jsbin.com/nawufedana/1/edit?js,console#">Dismiss 
+x</A> </DIV>
+<DIV class="modal" id="keyboardHelp">
+<DIV>
+<H2>Keyboard Shortcuts</H2>
+<TABLE>
+  <THEAD>
+  <TR>
+    <TH class="shortcut">Shortcut</TH>
+    <TH>Action</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD>ctrl + [num]</TD>
+    <TD>Toggle nth panel</TD></TR>
+  <TR>
+    <TD colspan="2"><SMALL><INPUT class="enablealt" id="enablealt" type="checkbox"> 
+                    <LABEL for="enablealt">Require alt key, leaving cmd+1, 2 etc 
+      for tab switching.</LABEL>             </SMALL>           </TD></TR>
+  <TR>
+    <TD>ctrl + 0</TD>
+    <TD>Close focused panel</TD></TR>
+  <TR>
+    <TD>ctrl + enter</TD>
+    <TD>Re-render output.<BR>If console visible: run JS in console</TD></TR>
+  <TR>
+    <TD>Ctrl + l</TD>
+    <TD>Clear the console</TD></TR>
+  <TR>
+    <TD>ctrl + /</TD>
+    <TD>Toggle comment on selected lines</TD></TR>
+  <TR>
+    <TD>ctrl + ]</TD>
+    <TD>Indents selected lines</TD></TR>
+  <TR>
+    <TD>ctrl + [</TD>
+    <TD>Unindents selected lines</TD></TR>
+  <TR>
+    <TD>tab</TD>
+    <TD>Code complete &amp; <A href="http://docs.emmet.io/" 
+      target="_blank">Emmet</A> expand</TD></TR>
+  <TR>
+    <TD>ctrl + shift + L</TD>
+    <TD>Beautify code in active panel</TD></TR>
+  <TR>
+    <TD>ctrl + s</TD>
+    <TD>Save &amp; lock current Bin from further changes</TD></TR>
+  <TR>
+    <TD>ctrl + shift + s</TD>
+    <TD>Open the share options</TD></TR>
+  <TR>
+    <TD>ctrl + y</TD>
+    <TD>Archive Bin</TD></TR>
+  <TR>
+    <TD colspan="2"><SMALL><BR><A href="http://jsbin.com/help/keyboard-shortcuts" 
+      target="_blank">Complete list of JS Bin 
+shortcuts</A></SMALL></TD></TR></TBODY></TABLE></DIV></DIV>
+<DIV class="modal" id="urlHelp">
+<DIV>
+<H2>JS Bin URLs</H2>
+<TABLE>
+  <THEAD>
+  <TR>
+    <TH class="shortcut">URL</TH>
+    <TH>Action</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD>/</TD>
+    <TD>Show the full rendered output.<BR><SMALL>This content will update in 
+      real time as it's updated from the /edit url.</SMALL></TD></TR>
+  <TR>
+    <TD>/edit</TD>
+    <TD>Edit the current bin</TD></TR>
+  <TR>
+    <TD>/watch</TD>
+    <TD>Follow a Code Casting session</TD></TR>
+  <TR>
+    <TD>/embed</TD>
+    <TD>Create an embeddable version of the bin</TD></TR>
+  <TR>
+    <TD>/latest</TD>
+    <TD>Load the very latest bin (/latest goes in place of the revision)</TD></TR>
+  <TR>
+    <TD>/[username]/last</TD>
+    <TD>View the last edited bin for this user</TD></TR>
+  <TR>
+    <TD>/[username]/last/edit</TD>
+    <TD>Edit the last edited bin for this user</TD></TR>
+  <TR>
+    <TD>/[username]/last/watch</TD>
+    <TD>Follow the Code Casting session for the latest bin for this user</TD></TR>
+  <TR>
+    <TD>/quiet</TD>
+    <TD>Remove analytics and edit button from rendered output</TD></TR>
+  <TR>
+    <TD>.js</TD>
+    <TD>Load only the JavaScript for a bin</TD></TR>
+  <TR>
+    <TD>.css</TD>
+    <TD>Load only the CSS for a bin</TD></TR>
+  <TR>
+    <TD colspan="2"><BR><SMALL>Except for username prefixed urls, the url may 
+      start with http://jsbin.com/abc and the url fragments can be added to the 
+      url to view it differently.</SMALL></TD></TR></TBODY></TABLE></DIV></DIV>
+<DIV hidden="">
+<DIV class="card" id="infocard">
+<DIV class="body">
+<UL class="controls">
+  <LI><A class="transfer" href="http://jsbin.com/nawufedana/1/edit?js,console#transfer">Transfer</A> 
+  </LI>
+  <LI><A href="http://jsbin.com/clone">Clone</A> </LI>
+  <LI><A class="startingpoint" href="http://jsbin.com/save-as-template">Save as 
+  template</A> </LI>
+  <LI><A class="export-as-gist" href="http://jsbin.com/nawufedana/1/edit?js,console#export-gist">Export 
+  gist</A> </LI>
+  <LI class="owner"><A href="http://jsbin.com/download">Download</A> </LI>
+  <LI class="owner"><A class="deletebin" 
+  href="http://jsbin.com/delete">Delete</A></LI></UL></DIV><HEADER><IMG>       
+<DIV class="visibility"></DIV>
+<DIV class="meta">
+<DIV class="author">Bin info</DIV>
+<DIV class="name"><B></B><SPAN class="pro">pro</SPAN></DIV><SPAN 
+class="when"><CANVAS></CANVAS><time></time></SPAN></DIV>
+<DIV class="viewers"><B>0</B><SPAN>viewers</SPAN></DIV></HEADER></DIV></DIV><!-- this is here --> 
+<SCRIPT>
+(function () {
+  var container = document.createElement('div');
+  container.id = 'bsaapi';
+  document.body.appendChild(container);
+  var script = document.createElement('script');
+  script.src = 'http://jsbin.com/js/inject-back';
+  document.body.appendChild(script);
+})();
+</SCRIPT>
+ 
+<SCRIPT src="Hei%20Meow_filer/jquery-1.11.0.min.js"></SCRIPT>
+ 
+<SCRIPT src="Hei%20Meow_filer/user.js"></SCRIPT>
+ 
+<SCRIPT src="Hei%20Meow_filer/jsbin-3.40.2.min.js"></SCRIPT>
+ 
+<SCRIPT src="Hei%20Meow_filer/start.js" defer="" async=""></SCRIPT>
+ </main></BODY></HTML>
